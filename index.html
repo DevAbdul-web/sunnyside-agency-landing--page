@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <title>Frontend Mentor | Sunnyside Agency Landing Page</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <div class="logo">
+      <img src="images/logo.svg" alt="Sunnyside logo">
+    </div>
+
+    <div class="nav_bar">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <button class="contact-btn">Contact</button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <h1>We are creatives</h1>
+    <img src="images/icon-arrow-down.svg" alt="arrow down" class="arrow">
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about">
+    <div class="about-heading">
+      <h2>Transform your brand</h2>
+      <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through
+        compelling visuals that do most of the marketing for you.</p>
+      <button>Learn More</button>
+    </div>
+    <div class="img-sec">
+      <img src="images/desktop/image-transform.jpg" alt="Egg">
+    </div>
+  </section>
+
+  <!-- ===== STAND OUT SECTION ===== -->
+  <section class="stand-out">
+    <div class="img-sec">
+      <img src="images/desktop/image-stand-out.jpg" alt="Cup">
+    </div>
+    <div class="stand-heading">
+      <h2>Stand out to the right audience</h2>
+      <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+        build and extend your brand in digital places.</p>
+      <button>Learn More</button>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services" class="serv-section">
+    <div class="services graphic">
+      <div class="serv-head">
+        <h2>Graphic Design</h2>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+          potential clients’ attention.</p>
+      </div>
+    </div>
+    <div class="services photo">
+      <div class="serv-head">
+        <h2>Photography</h2>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonial-section">
+    <h2>Client Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial-card">
+        <img src="images/image-emily.jpg" alt="Emily">
+        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+          hit.</p>
+        <h3>Emily R.</h3>
+        <span>Marketing Director</span>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/image-thomas.jpg" alt="Thomas">
+        <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+          enjoyable experience.</p>
+        <h3>Thomas S.</h3>
+        <span>Chief Operating Officer</span>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/image-jennie.jpg" alt="Jennie">
+        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <h3>Jennie F.</h3>
+        <span>Business Owner</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="projects" class="images-section">
+    <div class="img">
+      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="Milk Bottles">
+      <img src="images/desktop/image-gallery-orange.jpg" alt="Orange">
+    </div>
+    <div class="img">
+      <img src="images/desktop/image-gallery-cone.jpg" alt="Cone">
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar Cubes">
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="logo-div"><div class="logo-footer mask"></div></div>
+    <div class="navigation">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+    </div>
+    <div class="icons">
+      <img src="images/icon-facebook.svg" alt="Facebook">
+      <img src="images/icon-instagram.svg" alt="Instagram">
+      <img src="images/icon-twitter.svg" alt="Twitter">
+      <img src="images/icon-pinterest.svg" alt="Pinterest">
+    </div>
+
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Abdulqodir</a>.
+    </p>
+
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // Create menu icon for mobile
+    const menuToggle = document.createElement("div");
+    menuToggle.classList.add("menu-toggle");
+    document.querySelector("nav").appendChild(menuToggle);
+
+    const navBar = document.querySelector(".nav_bar");
+
+    menuToggle.addEventListener("click", () => {
+      navBar.classList.toggle("show");
+    }); 
+
+  </script>
+
+</body>
+
+</html>
