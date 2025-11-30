@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/DevAbdul-web/sunnyside-agency-landing--page)
-- Live Site URL: [Add live site URL here](https://devabdul-web.github.io/sunnyside-agency-landing--page/)
+- [Solution URL](https://github.com/DevAbdul-web/sunnyside-agency-landing--page)
+-  [Live Site URL](https://devabdul-web.github.io/sunnyside-agency-landing--page/)
 
 
 ### Built with
