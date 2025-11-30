@@ -2,7 +2,7 @@
 :root {
     --SoftRed: hsl(7, 99%, 70%);
     --Yellow: hsl(51, 100%, 49%);
-    --DarkDesaturatedCyan: hsl(167, 40%, 24%);
+    --DarkDesaturatedCyan: #25564b;
     --DarkBlue: hsl(198, 62%, 26%);
     --DarkModerateCyan: hsl(168, 34%, 41%);
     --VeryDarkDesaturatedBlue: hsl(212, 27%, 19%);
@@ -295,24 +295,8 @@ footer {
     justify-content: center;
 }
 
-.logo-footer {
-    width: 120px;
-    height: auto;
-    display: block;
-}
-.logo-footer.mask {
-    width: 120px;
-    height: 40px;
-    background-color: var(--DarkDesaturatedCyan);
-    -webkit-mask-image: url('images/logo.svg');
-    mask-image: url('images/logo.svg');
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    -webkit-mask-position: center;
-    mask-position: center;
-    display: inline-block;
+.logo-div img {
+    filter: brightness(0) saturate(100%) invert(25%) sepia(45%) saturate(506%) hue-rotate(116deg) brightness(94%) contrast(87%);;
 }
 
 .logo-div {
